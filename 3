@@ -1,0 +1,27 @@
+# ------------------------------- TASK 01 -----------------------------------
+# Načti od uživatele matematický operátor a 2 čísla a vypiš výsledek výpočtu.
+# Program bude podporovat operátory +, -, / a *.
+'''
+Zadej operátor: +
+Zadej první číslo: 3
+Zadej druhé číslo: 9
+Výsledek příkladu 3 + 9 je 12.
+'''
+operator = input("vlož operaci(+ - * /):")
+číslo1 = float(input("vlož první číslo"))
+číslo2 = float(input("vlož druhé číslo"))
+
+if operator == "+":
+    result = číslo1 + číslo2
+    print(round(result, 3))
+elif operator == "-":
+    result = číslo1 - číslo2
+    print(round(result, 3))
+elif operator == "*":
+    result = číslo1 * číslo2
+    print(round(result, 3))
+elif operator == "/":
+    result = číslo1 / číslo2
+    print(round(result, 3))
+else:
+    print(f"{operator}špatná operace")
